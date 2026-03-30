@@ -101,5 +101,5 @@ Enter your choice (1-4): 4
 ## 👨‍💻 Author
 
 **Beshoy**  
-Beginner Python Developer | Passionate about building practical tools  
+ Python Developer | Passionate about building practical tools  
 📌 [GitHub Profile](https://github.com/BeshoyHanna-BH)

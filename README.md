@@ -1,134 +1,105 @@
-# 💥 Exam Panic Solver
+# 📝 To-Do List App
 
-> Stop studying randomly — plan smart!
-
-A terminal-based study planner that automatically builds a personalized study schedule based on your exam dates, topics, and difficulty levels. No more guessing how much time to spend on each subject.
+A simple command-line To-Do List application built with Python. This project allows users to manage their daily tasks directly from the terminal — no libraries or installations required.
 
 ---
 
-## 🎯 The Problem It Solves
+## 🚀 Features
 
-Most students open their books the night before an exam with no plan. This tool takes your exam date, your topics, and how hard each one is — then calculates exactly how many hours to spend on each topic per day, so you never waste time or panic last minute.
-
----
-
-## ✨ Features
-
-- 📅 **Smart Schedule Generator** — Automatically splits study hours across topics weighted by difficulty
-- 🚨 **Panic Meter** — Color-coded urgency alerts (green → yellow → red) based on days left
-- ✅ **Progress Tracker** — Mark topics as done and watch your progress bar fill up
-- 💾 **Auto Save** — All your data is saved automatically in a local JSON file
-- 🎨 **Colored Terminal UI** — Clean, readable interface using ANSI colors (no external libraries)
+- ✅ Add new tasks
+- 📋 View all current tasks
+- 🗑️ Remove tasks by number
+- 👋 Clean exit option
 
 ---
 
-## 📸 Preview
+## 🛠️ Technologies Used
 
-```
-╔══════════════════════════════════════════════════╗
-║           💥  EXAM PANIC SOLVER  💥              ║
-║      Stop studying randomly — plan smart!        ║
-╚══════════════════════════════════════════════════╝
-
-  📆 Today: Monday, 2025-06-01
-
-  Your Upcoming Exams:
-  • Math                 3 days left  [██████░░░░] 3/5 topics
-  • Physics              12 days left [████░░░░░░] 2/5 topics
-
-──────────────────────────────────────────────────
-  Menu:
-  1. ➕ Add new exam
-  2. 📅 View full schedule
-  3. ✅ Mark topic as done
-  4. 🗑️  Delete exam
-  5. 🚪 Exit
-──────────────────────────────────────────────────
-```
+- Python 3 (no external libraries needed)
 
 ---
 
-## 🚀 Getting Started
+## ▶️ How to Run
 
-### Requirements
-- Python 3.x
-- No external libraries needed!
-
-### Run the project
+1. Make sure Python 3 is installed on your machine.
+2. Clone or download this repository.
+3. Open a terminal and navigate to the project folder.
+4. Run the script:
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/exam-panic-solver.git
-
-# Navigate into the folder
-cd exam-panic-solver
-
-# Run the program
-python exam_panic_solver.py
+python To_DO_List.py
 ```
 
 ---
 
-## 🧠 How It Works
+## 🖥️ How to Use
 
-1. You add an exam with a subject name, date, and list of topics
-2. For each topic, you rate the difficulty: Easy (1), Medium (2), or Hard (3)
-3. The program calculates the total available hours until the exam
-4. It distributes those hours across topics — harder topics get more time automatically
-5. You can mark topics as done and track your overall progress
-
-### Example
-
-If you have **10 days**, studying **3 hours/day**, and 3 topics:
-
-| Topic       | Difficulty | Hours Assigned |
-|-------------|------------|----------------|
-| Calculus    | 🔴 Hard    | 15.0 hrs       |
-| Statistics  | 🟡 Medium  | 10.0 hrs       |
-| Algebra     | 🟢 Easy    | 5.0 hrs        |
-
----
-
-## 📁 Project Structure
+Once you run the program, you'll see a menu like this:
 
 ```
-exam-panic-solver/
-│
-├── exam_panic_solver.py   # Main program
-├── exams_data.json        # Auto-generated data file (created on first run)
-└── README.md              # You're reading it!
+**welcome to your To-Do List**
+
+------------------------------
+1. Add a task
+2. View tasks
+3. Remove a task
+4. Exit
+------------------------------
+Enter your choice (1-4):
+```
+
+| Option | Action |
+|--------|--------|
+| 1 | Add a new task to the list |
+| 2 | View all current tasks |
+| 3 | Remove a task by its number |
+| 4 | Exit the program |
+
+---
+
+## 📂 Project Structure
+
+```
+To_DO_List.py   # Main application file
+README.md       # Project documentation
 ```
 
 ---
 
-## 🛠️ Built With
+## 💡 Example Usage
 
-| Tool | Purpose |
-|------|---------|
-| Python 3 | Core language |
-| `json` | Saving and loading exam data |
-| `datetime` | Calculating days left until exam |
-| `os` | Clearing the terminal screen |
-| ANSI Escape Codes | Colored terminal output |
+```
+Enter your choice (1-4): 1
+Enter the task you want to add: Buy groceries
+✅ Task 'Buy groceries' added successfully!
+
+Enter your choice (1-4): 2
+📋 Your To-Do List:
+1 . Buy groceries
+
+Enter your choice (1-4): 3
+📋 Your To-Do List:
+1 . Buy groceries
+Enter the number of the task you want to remove: 1
+✅ Task 'Buy groceries' removed successfully!
+
+Enter your choice (1-4): 4
+👋 Goodbye!
+```
 
 ---
 
-## 🌱 Possible Future Improvements
+## 🌱 Future Improvements
 
-- [ ] Export schedule to a `.txt` or `.pdf` file
-- [ ] Add a Pomodoro timer for study sessions
-- [ ] Set daily reminders using system notifications
-- [ ] GUI version using `tkinter`
+- Save tasks to a file so they persist after closing
+- Add task priority levels (High / Medium / Low)
+- Add due dates and reminders
+- Build a GUI version using `tkinter`
 
 ---
 
 ## 👨‍💻 Author
 
-**Beshoy**
-- GitHub: [@your-username](https://github.com/your-username)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+**Beshoy**  
+Beginner Python Developer | Passionate about building practical tools  
+📌 [GitHub Profile](https://github.com/BeshoyHanna-BH)
